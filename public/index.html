@@ -26,9 +26,35 @@
     -->
     <title>React App</title>
   </head>
-  <body>
+
+  <!--this works but its better to try and get the nav rendering in the layout file -->
+  <body class="background">
+    
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <div id="wrapper">
+    <NavLink className="home-link" to="/">Home</NavLink>
+    <NavLink className="about-link"  to="/about">About</NavLink>
+    <NavLink className="projects-link" to="/projects">Projects</NavLink>
+  </div>
+      <script src="https://cdnjs.cloudfare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="circletype.min.js"></script>
+      <script>
+      new CircleType(document.getElementByclas('wrapper'))
+  .radius(384);
+      </script>
+    </div>
+    <script src="https://cdnjs.cloudfare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="circletype.min.js"></script>
+    <script>
+    new CircleType(document.getElementById('wrapper'))
+.radius(384);
+    </script>
+    <style>
+      h1{
+        font-size: 40pt;
+      }
+    </style>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
